@@ -34,13 +34,15 @@ setState(e.target.value)
 
   return (
     <>
-    
+    <div>
+    <h2 style={{color:"white"}}> Welcome To The Clasify Me Website</h2>
       <div className="head">
-      <h4>university Searcher</h4>
+      <h4>university Available Globaly</h4>
       <button onClick={handleInput}>search</button>
       <input id='contInput' onChange={contry} type="text" />
     
-      <h4>No of universities: {Output.length}</h4>
+      <h4>Number of universities available: {Output.length}</h4>
+      <h5>We got you coverd</h5>
       </div>
      <div>
       {Output.map((e,index) => {
@@ -50,6 +52,7 @@ setState(e.target.value)
           <p>{e.country}</p>
         </div>
       })}
+     </div>
      </div>
     </>
   )
